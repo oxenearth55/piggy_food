@@ -13,7 +13,7 @@ const categories = props => {
             {/* SECTION Category 1 */}
             <div className="card_category">
                 <img src={salad3}/>
-                <div className="desc_categoty">
+                <div className="desc_category">
                     <h2>Breakfast Meals</h2>
                     <p><a href="#" className="recipe_btn">104 Recipes</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -25,7 +25,7 @@ const categories = props => {
              {/* SECTION Category 2 */}
              <div className="card_category">
                 <img src={pizza1}/>
-                <div className="desc_categoty">
+                <div className="desc_category">
                     <h2>Lunch Meals</h2>
                     <p><a href="#" className="recipe_btn">104 Recipes</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -37,7 +37,7 @@ const categories = props => {
              {/* SECTION Category 3 */}
              <div className="card_category">
                 <img src={steak2}/>
-                <div className="desc_categoty">
+                <div className="desc_category">
                     <h2>Dinner Meals</h2>
                     <p><a href="#" className="recipe_btn">104 Recipes</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -49,7 +49,7 @@ const categories = props => {
              {/* SECTION Category 4 */}
              <div className="card_category">
                 <img src={cake2}/>
-                <div className="desc_categoty">
+                <div className="desc_category">
                     <h2>Desserts Meals</h2>
                     <p><a href="#" className="recipe_btn">104 Recipes</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

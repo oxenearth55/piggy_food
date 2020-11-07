@@ -611,3 +611,35 @@ input:focus{
     justify-content: center;
     margin-bottom: 30px;
 }
+
+.card_category{
+    position: relative;
+}
+
+.card_category img{
+    position: absolute;
+    box-shadow: 2px 2px 10px -2px #333;
+    width: 200px;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 50%;
+    left: 50px; 
+    top: 50px;
+    
+}
+
+.desc_category{
+    padding: 55px 30px 10px; 
+    height: 380px; 
+    margin-top: 380px; 
+    text-align: center;
+    border: 2px solid #fc9d03;
+    box-shadow: 2px 2px 5px -3px #333;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.desc_category h2{
+    margin: 10px 0px; 
+    color: #333;
+}

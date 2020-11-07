@@ -1,0 +1,613 @@
+
+/*SECTION IMPORT Font Styles */
+@font-face{
+    font-family: Rabbit;
+    src: url(fonts/Rabbit.otf);
+}
+@font-face{
+    font-family: Champagne;
+    src: url(fonts/Champagne.ttf)
+}
+
+*{
+    padding: 0; 
+    margin: 0;
+}
+
+
+/* SECTION Home component */
+#hero{
+    width: 100%;
+    height: 100vh; 
+    background-image: url(Radiance_img/bg_intro2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.split_cover {
+    width: 50%; 
+    height: 100vh; 
+    background: rgba(86, 86, 86, 0.3); 
+    backdrop-filter: blur(10px);
+    position: absolute; 
+    left: 0; 
+    top: 0;
+}
+
+.split_cover_intro {
+    width: 550px;
+    color: #fff; 
+    position: absolute; 
+    right: 0; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+.split_cover_intro h1 {
+    font-size: 60px;
+    letter-spacing: 10px;
+
+}
+
+.split_cover_intro p {
+    color: #f0eef1;
+    font-size: 11px;
+    margin: 20px 0;
+    line-height: 18px;
+
+}
+
+/* SECTION Menu */
+
+a {
+    text-decoration: none; 
+    color: #333; 
+}
+
+p{
+    font-family: Arial, Helvetica, san-serif;
+}
+
+/* NOTE Grid is used to seperate div into blocks */
+nav {
+    display: grid; 
+    grid-template-columns: 300px auto 300px; 
+    padding: 10px
+}
+
+.brand_logo{
+    border-bottom: 2px solid #ddd;
+    /* margin: 0 auto; */
+}
+
+.brand_logo h1{
+    font-family: Rabbit;
+    font-size: 60px; 
+    letter-spacing: 5px; 
+    font-weight: normal;
+    text-align: center;
+}
+
+.brand_logo span{
+    color: #fc9d03;
+}
+
+.social_icons img{
+    width: 20px;
+    margin: 5px;
+    opacity: 50%;
+}
+/* NOTE when a user point to a social icon, opacity will be changed */
+.social_icons img:hover{
+    opacity: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.subscribe_btn a{
+    display: block;
+    padding: 6px;
+    width: 140px; 
+    text-align: center;
+    border: 3px solid #fc9d03; 
+    font-family: Champagne;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+
+.subscribe_btn a:hover{
+    background-color: #fc9d03;
+    border: 3px solid #333; 
+    transition: all 0.3 ease-in-out;
+}
+
+/*NOTE Grid-column used to locate this stuff */
+.nav_bar{
+    position: relative;
+    text-align: center; 
+    grid-column: 1/4; 
+    width: 600px;
+    margin: 0 auto;
+}
+
+.nav_bar a{
+    display: block;
+    float: left;
+    padding: 15px;
+    width: 150px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    font-size: 12px; 
+    box-sizing: border-box;
+}
+
+.nav_bar a.active{
+    color: #fc9d03;
+}
+
+.line{
+    position: absolute; 
+    width: 150px; 
+    border-bottom: 2px solid #fc9d03;
+    top: 35px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav_bar a:hover{
+    color: #fc9d03;
+    transition: color 0.3s ease-in-out;
+}
+
+/* NOTE When a use point in another nav, the line will be changed to that pointer */
+/* NOTE parameter means a position when a user point, then the action is called  */
+.nav_bar a:nth-child(2):hover ~ .line{
+    transform: translatex(150px);
+    transition: color 0.3s ease-in-out;
+}
+
+.nav_bar a:nth-child(3):hover ~ .line{
+    transform: translatex(300px);
+    transition: color 0.3s ease-in-out;
+}
+
+.nav_bar a:nth-child(4):hover ~ .line{
+    transform: translatex(450px);
+    transition: color 0.3s ease-in-out;
+}
+
+/* SECTION Home-cover */
+
+
+.cover{
+    display:grid; 
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 300px 300px; 
+    grid-gap: 5px 5px;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* NOTE relative relate to current point */
+.feature{
+    position: relative;
+}
+
+.feature img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/* NOTE bottom is used to locate something from the bottom related to parent (relative position) */
+/* NOTE absolute relate to parent */
+.title_filter {
+    position: absolute; 
+    bottom: 0; 
+    background-color: #333; 
+    opacity: 50%; 
+    width: 100%; 
+    height: 22%;
+}
+
+.feature_title{
+    position: absolute; 
+    bottom: 0;
+    font-family: Couture;
+    letter-spacing: 2px;
+    bottom: 0; 
+    margin: 5px 10px; 
+    color: #fff;
+}
+
+/* NOTE most of the parent class are relative  */
+.date{
+    position: relative; 
+    width: 60px; 
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px; 
+    background-color: #fc9d03; 
+    padding: 10px 0px;
+}
+
+.date h3{
+    line-height: 25px;
+}
+
+.date span{
+    color: #222;
+    display: block;
+}
+
+.feature_title h1{
+    font-size: 28px;
+}
+
+.feature_title p{
+    font-size: 10px;
+    margin: 5px 0px; 
+}
+
+.feature_title p span{
+    margin: 0px 15px; 
+    border-left: 1px solid #fff;
+}
+
+/* NOTE grid-row = grid start and end => start/end */
+/* NOTE 1 means start at position(corner) 1 */
+/* NOTE 3 means end at position(corner) 3*/
+.cover .feature:nth-child(1){
+    grid-row: 1/3;
+}
+
+/* NOTE nth-child property is used to select div that we are going to adapt */
+.cover .feature:nth-child(4){
+    grid-row: 1/3; 
+    grid-column: 3/4;
+}
+
+.cover .feature:nth-child(3) h1, .cover .feature:nth-child(2) h1{
+    font-size: 15px;
+}
+
+.cover .feature:nth-child(3) p, .cover .feature:nth-child(2) p{
+    font-size: 8px;
+}
+
+.cover .feature:nth-child(3) .date, .cover .feature:nth-child(2) .date{
+    font-size: 16px;
+    width: 50px;
+    padding: 2px 0px;
+    margin-bottom: 5px;
+}
+
+.cover .feature:nth-child(4) .title_filter{
+    height: 25%;
+
+}
+
+.cover .feature:nth-child(4) h1{
+    font-size: 20px;
+}
+
+/* SECTION Feature  */
+.featured{
+    display:grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap: 20px 20px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+
+/* SECTION sidebar */
+
+.sidebar{
+    grid-row: 1/4;
+}
+
+.sidebar div > h2{
+    margin: 20px 0;
+    font-family: Rabbit;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.sidebar h2 > span{
+    color: #fc9d03;
+}
+
+.about img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about p{
+    line-height: 25px; 
+    text-align: justify;
+}
+
+.uppercase{
+    text-transform: uppercase;
+    font-weight: bold; 
+    color: #333;
+}
+
+.featured_posts{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post{
+    display: flex;
+}
+
+.calendar{
+    width: 50px;
+    height: 80px;
+    margin: 10px; 
+    background-color: #333;
+    /* padding: 0 auto; */
+}
+
+.calendar p{
+    font-size: 30px; 
+    font-family: Couture;
+    text-align: center; 
+    color: #fc9d03;
+}
+
+.calendar span{
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.dish h6{
+    color: #fc9d03;
+    margin: 10px 0px;
+    font-size: 16px;
+}
+
+.dish h1{
+    font-size: 24px; 
+    font-family: Champagne;
+    letter-spacing: 3px;
+}
+
+.dish p{
+    font-size: 12px;
+}
+
+.recipe_type div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: block;
+    padding: 15px; 
+    border-bottom: 2px solid #ddd;
+    width: 300px;
+    color: #333;
+}
+
+.sub_type a{
+    margin-left: 20px;
+    color: #555; 
+    font-size: 14px;
+}
+
+.recipe_type div span{
+    float: right;
+    font-size: 12px;
+}
+
+.recipe_type div a:hover{
+    color: #fc9d03; 
+    transition: all 0.3s ease-in-out;
+}
+
+
+.poster{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.poster p{
+    width: 90%;
+    line-height: 25px; 
+    margin-bottom: 20px; 
+    color: #333;
+}
+
+.poster input{
+    width: 60%; 
+    padding: 10px; 
+    border: 2px solid #fc9d03;
+}
+
+input:focus{
+    border: 2px solid #333;
+    outline:none;
+}
+
+::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.poster button{
+    font-family: Couture;
+    background-color: #fc9d03;
+    border: none; 
+    padding: 10px;
+    width: 120px; 
+    font-size: 14px; 
+    margin-top: 20px;
+}
+
+/* SECTION Featured Content Posts for Recipes */
+.featured_post{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    position: relative;
+    text-align: center;
+    line-height: 25px;
+}
+
+.featured_post h1{
+    margin: 20px 0px;
+    font-family: Champagne;
+    letter-spacing:  3px;
+
+}
+
+.featured_post .date{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: #fc9d03;
+    width: 80px;
+}
+
+.featured_post .date p {
+    font-size: 30px; 
+    font-weight: bold; 
+    font-family: Couture;
+    color: #fff; 
+    text-align: center; 
+}
+
+.featured_post .date p span{
+    display:block;
+    text-transform: uppercase;
+    margin-top: 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.featured_post img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.featured_post h6{
+    font-family: Rabbit;
+    font-size: 20px; 
+    letter-spacing: 3px; 
+    margin: 10px 0px; 
+}
+
+.featured_post h6 span{
+    color: #fc9d03; 
+}
+
+.featured_post a.button{
+    display: block;
+    border: 2px solid #fc9d03; 
+    padding: 5px 10px; 
+    width: 120px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: Champagne;
+    margin: 20px auto;
+}
+
+.featured_post a.button:hover{
+    border: 2px solid #333;
+    background-color: #fc9d03;
+    transition: all 0.3s ease-in-out;
+}
+
+.selected_posts img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.description{
+    text-align:center;
+}
+
+.description > p{
+    margin: 10px 0px 30px; 
+    color: #333;
+    font-size: 12px; 
+    line-height: 25px;
+}
+
+.description h1{
+    font-family: Champagne;
+    font-size: 26px; 
+    margin: 10px 0px; 
+    letter-spacing: 3px;
+}
+
+.comment{
+    margin: 70px 0px; 
+    padding: 20px; 
+    box-sizing: border-box;
+    height: 200px; 
+    background-color: #eee;
+}
+
+.comment p{
+    line-height: 25px;
+    color: #555; 
+    text-align: justify;
+}
+
+.comment h6{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fc9d03;
+    letter-spacing: 2px;
+    float: right;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.load_more{
+    grid-column: 2/4;
+    text-align: center;
+}
+
+.load_more a{
+    display: block;
+    background-color: #eee;
+    font-size: 20px; 
+    padding: 15px; 
+    width: 180px; 
+    margin: 0 auto;
+    border: 2px solid #fff; 
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.load_more a:hover{
+    background-color: #fc9d03;
+    border: 2px solid #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.tag{
+    color: #fc9d03;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.tag span{
+    border-left: 2px solid #ccc;
+    margin: 0px 20px;
+}
+
+/* SECTION Categories Style Section */
+
+.categories{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-column-gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+}

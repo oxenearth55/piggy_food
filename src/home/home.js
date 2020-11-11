@@ -4,6 +4,7 @@ import Layout from '../layout';
 import Blog from './blog';
 import Intro from './intro';
 import Categories from './categories';
+import Newletter from './newletter';
 
 const home = () => (
     <Layout>    
@@ -11,6 +12,7 @@ const home = () => (
         <Intro/> 
         <Blog/>
         <Categories/>
+        {/* <Newletter/> */}
         {/* ANCHOR Conponents */}
     </Layout>
 )

@@ -1,14 +1,15 @@
 import React from 'react';
 import Menu from './menu_footer/menu';
-import Cover from './Components/cover';
+import Footer from './menu_footer/footer';
 
 
 const layout = ({children}) => (
-    <div className = 'container-fluid mx-0 px-0'>
+    <div className="container-fluid" >
         <Menu/>
         <div className='row'>  
             {children}
         </div>
+        <Footer/>
     </div>
 );
 

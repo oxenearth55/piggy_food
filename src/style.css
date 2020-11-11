@@ -8,6 +8,9 @@
     font-family: Champagne;
     src: url(fonts/Champagne.ttf)
 }
+body{
+    /* width: 1400px; */
+}
 
 *{
     padding: 0; 
@@ -73,7 +76,7 @@ p{
 nav {
     display: grid; 
     grid-template-columns: 300px auto 300px; 
-    padding: 10px
+    padding: 10px;
 }
 
 .brand_logo{
@@ -185,8 +188,8 @@ nav {
     grid-template-columns: 50% 25% 25%;
     grid-template-rows: 300px 300px; 
     grid-gap: 5px 5px;
-    width: 1400px;
-    margin: 0 auto;
+    /* width: 1400px; */
+    margin:0 auto;
 }
 
 /* NOTE relative relate to current point */
@@ -631,7 +634,7 @@ input:focus{
 .desc_category{
     padding: 55px 30px 10px; 
     height: 380px; 
-    margin-top: 380px; 
+    margin-top: 200px; 
     text-align: center;
     border: 2px solid #fc9d03;
     box-shadow: 2px 2px 5px -3px #333;
@@ -642,4 +645,213 @@ input:focus{
 .desc_category h2{
     margin: 10px 0px; 
     color: #333;
+}
+
+.desc_category p + p {
+    background-color: #fc9d0380;
+    padding: 15px; 
+    margin-top: 20px;
+    color: #333; 
+    font-size: 16px; 
+    line-height: 16px;
+}
+
+.desc_category a.recipe_btn{
+    color: #555;
+    font-weight: bold;
+    border-left: 2px solid #fc9d03;
+    padding-left: 10px;
+}
+
+.desc_category a.recipe_btn:hover{
+    color: #fc9d03;
+    transition: color 0.3s ease-in-out;
+}
+
+.desc_category a.button{
+    display: block;
+    margin: 20px auto; 
+    padding: 10px; 
+    width: 120px; 
+    background-color: #fc9d03;
+    font-weight: bold;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.desc_category a.button:hover{
+    color: #333; 
+    border: 2px solid #fc9d03;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+/* SECTION Newsletter */
+
+.newsletter{
+    background-image: url(./food_images/fresh1.jpg);
+    background-size: cover;
+    background-position: center; 
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.newsletter_filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #33333370;
+}
+
+.action_call{
+    position:absolute;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding-top: 70px; 
+    box-sizing: border-box;
+    font-family: Champagne;
+    letter-spacing: 2px;
+}
+
+.action_call h2{
+    margin: 20px 0px;
+}
+
+.action_call input{
+    width: 300px; 
+    padding: 10px;
+    background-color: #eee;
+    border: none; 
+    border-radius: 5px;
+}
+
+.action_call button{
+    width: 120px;
+    padding: 10px; 
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;  
+}
+
+.action_call button:hover{
+    cursor: pointer;
+    background-color: #fc9d03;
+    transition: all 0.3s ease-in-out;
+}
+
+/* SECTION Footer */
+
+.footer{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    font-family: Champagne;
+    background-color: #fc9d03;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+
+/* SECTION Responsive Media Queries */
+
+@media only screen and (max-width: 800px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .subscribe_btn{
+        display: none;
+    }
+
+    .brand_logo{
+        width: 100%;
+    }
+
+    .nav_bar{
+        width: 100%;
+    }
+
+    .nav_bar a{
+        display: block; 
+        float: none; 
+        text-align: center;
+        width: 100%;
+    }
+    
+    .nav_bar .line{
+        display:none;
+    }
+
+    .cover{
+        display: flex;
+        flex-direction: column;
+        width: 1400px;
+        margin: 0px 15px;
+    }
+
+    .feature{
+        width:100%;
+    }
+
+    .featured img{
+       height: 400px;
+    }
+
+    .featured{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about p{
+        padding: 20px;
+    }
+
+    .featured_posts{
+        display:none;
+    }
+
+    .subscribe{
+        display: none;;
+    }
+
+    .recipe_type{
+        display:none
+    }
+
+    .categories{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card_category{
+        margin: 30px; 
+    }
+
+    .desc_category{
+        height: 330px;
+
+    }
+    
+
+    .card_category img{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .newsletter{
+        /* width: 20%; */
+        
+    }
+
 }

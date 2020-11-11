@@ -9,6 +9,21 @@ import salad2 from '../food_images/salad2.jpg';
 import salad5 from '../food_images/salad5.jpg';
 import macaroni1 from '../food_images/macaroni1.jpg';
 import steak2 from '../food_images/steak2.jpg';
+import tofu2 from '../photo/food/tofu2.jpg';
+import shrimp_pancake from '../photo/food/shrimp_pancake.jpg';
+import deep_fired_crab4 from '../photo/food/deep_fired_crab4.jpg';
+import shrimp_pancake6 from '../photo/food/shrimp_pancake6.jpg';
+import stuffed_squid3 from '../photo/food/stuffed_squid3.jpg';
+import green_curry from '../photo/food/green_curry.jpg';
+import unknow from '../photo/food/unknow.jpg';
+import unknow2 from '../photo/food/unknow2.jpg';
+
+
+
+
+
+
+
 
 
 
@@ -102,7 +117,7 @@ const blog = props => {
                 <div className="date">
                     <p>16<span>Jul</span></p>
                 </div>
-                <img src={salmon}/>
+                <img src={deep_fired_crab4}/>
                 <div className="tag"><p>Asian <span></span>Lunch</p></div>
                 <h1>Amazing Shrimp Rice Noodle with Enriching Broth</h1>
                 <h6>Posted on 16th July by <span>Rachel</span></h6>
@@ -113,7 +128,7 @@ const blog = props => {
             </div>
             
             <div className="selected_posts">
-                <img src={chicken}/>
+                <img src={stuffed_squid3}/>
                 <div className="description">
                     <div className="tag"><p>Lunch <span>Asian</span></p></div>
                     <h1>Teriyaki Chicken Salad with Sour Lemon</h1>
@@ -122,7 +137,7 @@ const blog = props => {
                     I always keep some shrimp in the freezer as a contingency plan</p>
                 </div>
 
-                <img src={salad6}/>
+                <img src={unknow}/>
                 <div className="description">
                     <div className="tag"><p>Lunch <span>Asian</span></p></div>
                     <h1>Thai Fragrant Rice</h1>
@@ -138,7 +153,7 @@ const blog = props => {
                     </div>  
                 </div>
 
-                <img src={salad5}/>
+                <img src={unknow2}/>
                 <div className="description">
                     <div className="tag"><p>Lunch <span>Asian</span></p></div>
                     <h1>Teriyaki Chicken Salad with Sour Lemon</h1>
@@ -152,16 +167,16 @@ const blog = props => {
 
 
             <div className="selected_posts">
-                <img src={salad2}/>
+                <img src={shrimp_pancake6}/>
                 <div className="description">
                     <div className="tag"><p>Lunch <span>Asian</span></p></div>
-                    <h1>Benedict Egg salad on Toast</h1>
+                    <h1>Shrimp Pancake</h1>
                     <p>hrimp is such an easy, fast, versatile and delicious option for flavor-packed lunches and 
                     dinners. It’s a great seafood canvas on which to build flavors and textures, and this is why 
                     I always keep some shrimp in the freezer as a contingency plan</p>
                 </div>
 
-                <img src={macaroni1}/>
+                <img src={tofu2}/>
                 <div className="description">
                     <div className="tag"><p>Lunch <span>Asian</span></p></div>
                     <h1>Macaroni with Italian Tomato Sauce</h1>
@@ -170,7 +185,7 @@ const blog = props => {
                     I always keep some shrimp in the freezer as a contingency plan</p>
                 </div>
 
-                <img src={steak2}/>
+                <img src={green_curry}/>
                 <div className="description">
                     <div className="tag"><p>Lunch <span>Asian</span></p></div>
                     <h1>Steak chicken fry</h1>

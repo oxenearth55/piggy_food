@@ -4,6 +4,7 @@ import salad3 from '../food_images/salad3.jpg';
 import pizza1 from '../food_images/pizza1.jpg';
 import steak2 from '../food_images/steak2.jpg';
 import cake2 from '../food_images/cake2.jpg';
+import kaotom from '../photo/food/kaotom.jpg';
 
 
 const categories = props => {
@@ -12,7 +13,7 @@ const categories = props => {
 
             {/* SECTION Category 1 */}
             <div className="card_category">
-                <img src={salad3}/>
+                <img src={kaotom}/>
                 <div className="desc_category">
                     <h2>Breakfast Meals</h2>
                     <p><a href="#" className="recipe_btn">104 Recipes</a></p>

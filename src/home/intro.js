@@ -4,6 +4,15 @@ import bacon from '../food_images/bacon1.jpg';
 import salad from '../food_images/salad1.jpg';
 import steak from '../food_images/steak1.jpg';
 import cake from '../food_images/cake1.jpg';
+import hoomok from '../photo/food/hoomok.jpg';
+import tomyum9 from '../photo/food/tomyum9.jpg';
+import crab_curry2 from '../photo/food/crab_curry2.jpg';
+import fired_rice3 from '../photo/food/fired_rice3.jpg';
+import deep_fired_crab from '../photo/food/deep_fired_crab3.jpg';
+
+
+
+
 
 
 
@@ -13,7 +22,7 @@ const intro = props => {
 
             {/* SECTION Feature1 */}
             <div className="feature">
-                <img src={bacon}/>
+                <img src={crab_curry2}/>
                 <div className="title_filter"></div>
                 <div className="feature_title">
                     <div className="date">
@@ -27,7 +36,7 @@ const intro = props => {
 
             {/* SECTION feature2 */}
             <div className="feature">
-                <img src={salad}/>
+                <img src={tomyum9}/>
                 <div className="title_filter"></div>
                 <div className="feature_title">
                     <div className="date">
@@ -41,7 +50,7 @@ const intro = props => {
 
             {/* SECTION Feature3 */}
             <div className="feature">
-                <img src={steak}/>
+                <img src={fired_rice3}/>
                 <div className="title_filter"></div>
                 <div className="feature_title">
                     <div className="date">
@@ -55,7 +64,7 @@ const intro = props => {
 
             {/* SECTION Feature4 */}
             <div className="feature">
-                <img src={cake}/>
+                <img src={hoomok}/>
                 <div className="title_filter"></div>
                 <div className="feature_title">
                     <div className="date">

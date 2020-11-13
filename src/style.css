@@ -15,6 +15,9 @@
     margin: 0;
 }
 
+.font-champagne{
+    font-family: Champagne;
+}
 
 /* SECTION Home component */
 #hero{
@@ -763,10 +766,26 @@ input:focus{
     width: 100%;
     height: 100%;
     object-fit: cover; 
-
 }
 
 
+.gallery-heading{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.29)), to(rgba(0, 0, 0, 0.11))),url(./photo/gallery/header.jpg);
+    padding: 110px; 
+    /* background-size: cover; */
+    background-position: center; 
+    background-attachment: fixed;
+
+}
+
+.gallery-heading h1{
+    background-color: rgba(245, 243, 243, 0.623);
+    font-weight:bold;
+    padding: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+     /* border-bottom: 2px solid #fc9d03; */
+}
 
 
 /* SECTION Responsive Media Queries */
@@ -860,6 +879,10 @@ input:focus{
         transform: translateX(-50%);
     }
 
-    
+    @media screen and (min-width: 1200px) {
+        .fix-bg{
+            background-attachment: fixed;
+            }
+        }
 
 }

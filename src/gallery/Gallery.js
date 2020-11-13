@@ -31,18 +31,17 @@ const Gallery = () => {
     return (
 
     <Layout>
-      <div className ="container mb-5">
+      <div className ="container mb-5 gallery">
+        <div className="d-flex justify-content-center my-5 gallery-heading fix-bg">
+        <h1 className="text-center font-champagne ">
+          My Foods Gallery</h1>
+        </div>
         <div className="row">
           {food_details.map(food => (
             <Card key={food.id} image={food.image}/>
-
-          ))}
-
-        
+          ))}        
         </div>
-
       </div>
-
     </Layout>
 
        

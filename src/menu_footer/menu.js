@@ -9,7 +9,8 @@ import twitter from '../icons/twitter.svg'
 
 
 
-const menu = () => {
+const menu = (props) => {
+  const activeTest = 'active'
  
 return(
   <nav>
@@ -27,11 +28,11 @@ return(
     <div className="subscribe_btn"><a href="#">Subscribes</a></div>
 
     <div className="nav_bar">
-      <Link to="/" className="active">Home Page</Link>
-      <Link to="/">Blog Entries</Link>
-      <Link to="/">Food Gallery</Link>
-      <Link to="/">Contact Us</Link>
-      <div className="line"></div>
+      <Link to="/" className={window.location.pathname == '/' && 'active line'}>Home Page</Link>
+      <Link to="/" className={window.location.pathname == '/t' && 'active line'} >Blog Entries</Link>
+      <Link to="/gallery" className={window.location.pathname == '/gallery' && 'active line'}>Food Gallery</Link>
+      <Link to="/" className={window.location.pathname == '/t' && 'active line'}>Contact Us</Link>
+      {/* <div className="line"></div> */}
     </div>
 
   </nav>  

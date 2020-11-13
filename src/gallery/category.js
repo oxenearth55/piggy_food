@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const category = props => {
     return (
-        <div>
+        <div className>
             
         </div>
     )
@@ -13,4 +13,4 @@ category.propTypes = {
 
 }
 
-export default category
+export default category;

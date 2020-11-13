@@ -787,6 +787,10 @@ input:focus{
      /* border-bottom: 2px solid #fc9d03; */
 }
 
+.filter-tab li{
+    cursor: pointer;
+    /* color: #fc9d03; */
+}
 
 /* SECTION Responsive Media Queries */
 

@@ -12,7 +12,7 @@ import steak2 from '../food_images/steak2.jpg';
 import tofu2 from '../photo/food/tofu2.jpg';
 import shrimp_pancake from '../photo/food/shrimp_pancake.jpg';
 import deep_fired_crab4 from '../photo/food/deep_fired_crab4.jpg';
-import shrimp_pancake6 from '../photo/food/shrimp_pancake6.jpg';
+import fried_pork from '../photo/food/fried_pork.jpg';
 import stuffed_squid3 from '../photo/food/stuffed_squid3.jpg';
 import green_curry from '../photo/food/green_curry.jpg';
 import unknow from '../photo/food/unknow.jpg';
@@ -167,7 +167,7 @@ const blog = props => {
 
 
             <div className="selected_posts">
-                <img src={shrimp_pancake6}/>
+                <img src={fried_pork}/>
                 <div className="description">
                     <div className="tag"><p>Lunch <span>Asian</span></p></div>
                     <h1>Shrimp Pancake</h1>

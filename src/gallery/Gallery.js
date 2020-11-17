@@ -69,9 +69,10 @@ const Gallery = () => {
       </div>
       
 
-        <div className="row mt-4">
+        <div className="row mt-4 justify-content-center">
           {food_details.map(food => ( type == 'all' ?
-            <Card key={food.id} image={food.image}/> : food.type == type && <Card key={food.id} image={food.image}/>
+            <Card key={food.id} image={food.image} name={food.name} id={food.id}/> 
+            : food.type == type && <Card key={food.id} image={food.image} name={food.name} id={food.id}/>
           ))}        
         </div>
       </div>

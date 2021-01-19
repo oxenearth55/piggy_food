@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import Layout from '../layout';
 import PropTypes from 'prop-types';
 import { food_details } from '../gallery/food_info';
+// ANCHOR Components 
+import Header from './header';
+import About from './about';
 
 const Main = (props) => {
     const [food, setFood] = useState({});
@@ -14,29 +17,10 @@ const Main = (props) => {
     },[props])
     return (
         <Layout>
-            <div>
-                <div className="d-flex justify-content-center mb-3 food-header fix-bg"        
-                style={{
-                    backgroundImage: 'url('+food.image+')'         
-                }}     
-                >
-                    <h1 className="text-center font-champagne ">
-                    {food.name} </h1>
-                </div>        
-                <div className="container my-5">
-                    <div className="row">
-                        <div className="col-6 text-center">
-                            <img src={food.image}   style={{
-                        width:'80%'         
-                    }}     />
-                        </div>
-                        <div className="col-6 text-cente mt-5 ">
-                            {food.description}
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+            <Fragment>        
+                <Header name={food.name} image={food.image}/>
+                <About image={food.image} description={food.description}/>       
+            </Fragment>
         </Layout>
      
     )

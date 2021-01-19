@@ -113,6 +113,7 @@ const blog = props => {
 
             </div>
 
+            {/* SECTION Feature */}
             <div className="featured_post">
                 <div className="date">
                     <p>16<span>Jul</span></p>

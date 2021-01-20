@@ -69,6 +69,15 @@ export const food_details = [
         type: 'soup',
         image: require('../photo/food/shrimp_pak.jpg') 
        
+    },
+
+    {
+        id:9, 
+        name: 'unknow2',
+        description: 'food delicious',
+        type: 'soup',
+        image: require('../photo/food/shrimp_pak.jpg') 
+       
     }
 
 ]

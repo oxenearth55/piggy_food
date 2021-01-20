@@ -45,7 +45,32 @@ export const food_details = [
         type: 'fried',
         image: require('../photo/food/tofu.jpg') 
        
+    },
+    {
+        id:7, 
+        name: 'Fried Prawn with Garlic',
+        description: 'food delicious',
+        type: 'fried',
+        image: require('../photo/food/fried_prawn_with_garlic.jpg') 
+       
+    },
+    {
+        id:8, 
+        name: 'unknow',
+        description: 'food delicious',
+        type: 'soup',
+        image: require('../photo/food/unknow2.jpg') 
+       
+    },
+    {
+        id:9, 
+        name: 'unknow2',
+        description: 'food delicious',
+        type: 'soup',
+        image: require('../photo/food/shrimp_pak.jpg') 
+       
     }
+
 ]
 
  
